@@ -1,0 +1,731 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA3BC02B238945A500796A17 /* StandingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3BC02A238945A500796A17 /* StandingsCell.swift */; };
+		DA3BC02D238982B300796A17 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3BC02C238982B300796A17 /* ScheduleCell.swift */; };
+		DA3BC02F238995A300796A17 /* SimulatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3BC02E238995A300796A17 /* SimulatorViewController.swift */; };
+		DA3BC03123899BEA00796A17 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3BC03023899BEA00796A17 /* MainNavigationController.swift */; };
+		DA4F17CE238B152B00942708 /* stadium_goal_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA4F17CD238B152A00942708 /* stadium_goal_background.jpg */; };
+		DA59A07C238C671E00124FD9 /* StandingsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA59A07B238C671E00124FD9 /* StandingsDataSource.swift */; };
+		DA59A07E238C673900124FD9 /* ScheduleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA59A07D238C673900124FD9 /* ScheduleDataSource.swift */; };
+		DA78CF0D238823630047A4DB /* logo_liverpool.png in Resources */ = {isa = PBXBuildFile; fileRef = DA78CF09238823630047A4DB /* logo_liverpool.png */; };
+		DA78CF0E238823630047A4DB /* logo_feyenoord.png in Resources */ = {isa = PBXBuildFile; fileRef = DA78CF0A238823630047A4DB /* logo_feyenoord.png */; };
+		DA78CF0F238823630047A4DB /* logo_valencia.png in Resources */ = {isa = PBXBuildFile; fileRef = DA78CF0B238823630047A4DB /* logo_valencia.png */; };
+		DA78CF10238823630047A4DB /* logo_gent.png in Resources */ = {isa = PBXBuildFile; fileRef = DA78CF0C238823630047A4DB /* logo_gent.png */; };
+		DA78CF12238824E30047A4DB /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = DA78CF11238824E30047A4DB /* background.png */; };
+		DA8E4C0723859A5700157D75 /* TeamResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8E4C0623859A5700157D75 /* TeamResult.swift */; };
+		DAF69C882386B82B003C553E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF69C872386B82B003C553E /* Constants.swift */; };
+		DAF69C8D2386C6F4003C553E /* MatchSimulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF69C8C2386C6F4003C553E /* MatchSimulator.swift */; };
+		DAF69C8F2386CC07003C553E /* PouleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF69C8E2386CC07003C553E /* PouleHelper.swift */; };
+		DAFBCC7D2384813E00B00319 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBCC7C2384813E00B00319 /* AppDelegate.swift */; };
+		DAFBCC7F2384813E00B00319 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBCC7E2384813E00B00319 /* SceneDelegate.swift */; };
+		DAFBCC812384813E00B00319 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBCC802384813E00B00319 /* ViewController.swift */; };
+		DAFBCC842384813E00B00319 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFBCC822384813E00B00319 /* Main.storyboard */; };
+		DAFBCC862384813F00B00319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAFBCC852384813F00B00319 /* Assets.xcassets */; };
+		DAFBCC892384813F00B00319 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAFBCC872384813F00B00319 /* LaunchScreen.storyboard */; };
+		DAFBCC942384813F00B00319 /* PouleSimulatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBCC932384813F00B00319 /* PouleSimulatorTests.swift */; };
+		DAFBCC9F2384813F00B00319 /* PouleSimulatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBCC9E2384813F00B00319 /* PouleSimulatorUITests.swift */; };
+		DAFBCCB42384884B00B00319 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBCCB32384884B00B00319 /* Team.swift */; };
+		DAFBCCB6238489A400B00319 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBCCB5238489A400B00319 /* Round.swift */; };
+		DAFBCCB8238489FF00B00319 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBCCB7238489FF00B00319 /* Match.swift */; };
+		DAFBCCBA23848B1C00B00319 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBCCB923848B1C00B00319 /* Schedule.swift */; };
+		DAFBCCBC23848BEF00B00319 /* Poule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBCCBB23848BEF00B00319 /* Poule.swift */; };
+		DAFBCCBE23848D2A00B00319 /* Standing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAFBCCBD23848D2A00B00319 /* Standing.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DAFBCC902384813F00B00319 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFBCC712384813D00B00319 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAFBCC782384813E00B00319;
+			remoteInfo = PouleSimulator;
+		};
+		DAFBCC9B2384813F00B00319 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DAFBCC712384813D00B00319 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DAFBCC782384813E00B00319;
+			remoteInfo = PouleSimulator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DA3BC02A238945A500796A17 /* StandingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsCell.swift; sourceTree = "<group>"; };
+		DA3BC02C238982B300796A17 /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
+		DA3BC02E238995A300796A17 /* SimulatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorViewController.swift; sourceTree = "<group>"; };
+		DA3BC03023899BEA00796A17 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		DA4F17CD238B152A00942708 /* stadium_goal_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = stadium_goal_background.jpg; path = ../../../Documents/poulesim/stadium_goal_background.jpg; sourceTree = "<group>"; };
+		DA59A07B238C671E00124FD9 /* StandingsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsDataSource.swift; sourceTree = "<group>"; };
+		DA59A07D238C673900124FD9 /* ScheduleDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleDataSource.swift; sourceTree = "<group>"; };
+		DA78CF09238823630047A4DB /* logo_liverpool.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_liverpool.png; sourceTree = "<group>"; };
+		DA78CF0A238823630047A4DB /* logo_feyenoord.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_feyenoord.png; sourceTree = "<group>"; };
+		DA78CF0B238823630047A4DB /* logo_valencia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_valencia.png; sourceTree = "<group>"; };
+		DA78CF0C238823630047A4DB /* logo_gent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_gent.png; sourceTree = "<group>"; };
+		DA78CF11238824E30047A4DB /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		DA8E4C0623859A5700157D75 /* TeamResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamResult.swift; sourceTree = "<group>"; };
+		DAF69C872386B82B003C553E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DAF69C8C2386C6F4003C553E /* MatchSimulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchSimulator.swift; sourceTree = "<group>"; };
+		DAF69C8E2386CC07003C553E /* PouleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PouleHelper.swift; sourceTree = "<group>"; };
+		DAFBCC792384813E00B00319 /* PouleSimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PouleSimulator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFBCC7C2384813E00B00319 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DAFBCC7E2384813E00B00319 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DAFBCC802384813E00B00319 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DAFBCC832384813E00B00319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DAFBCC852384813F00B00319 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DAFBCC882384813F00B00319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DAFBCC8A2384813F00B00319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFBCC8F2384813F00B00319 /* PouleSimulatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PouleSimulatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFBCC932384813F00B00319 /* PouleSimulatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PouleSimulatorTests.swift; sourceTree = "<group>"; };
+		DAFBCC952384813F00B00319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFBCC9A2384813F00B00319 /* PouleSimulatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PouleSimulatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAFBCC9E2384813F00B00319 /* PouleSimulatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PouleSimulatorUITests.swift; sourceTree = "<group>"; };
+		DAFBCCA02384813F00B00319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAFBCCB32384884B00B00319 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		DAFBCCB5238489A400B00319 /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
+		DAFBCCB7238489FF00B00319 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		DAFBCCB923848B1C00B00319 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		DAFBCCBB23848BEF00B00319 /* Poule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Poule.swift; sourceTree = "<group>"; };
+		DAFBCCBD23848D2A00B00319 /* Standing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Standing.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DAFBCC762384813E00B00319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFBCC8C2384813F00B00319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFBCC972384813F00B00319 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DAF69C862386B81E003C553E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				DAF69C872386B82B003C553E /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		DAF69C892386C4DA003C553E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DAF69C8C2386C6F4003C553E /* MatchSimulator.swift */,
+				DAF69C8E2386CC07003C553E /* PouleHelper.swift */,
+				DA59A07B238C671E00124FD9 /* StandingsDataSource.swift */,
+				DA59A07D238C673900124FD9 /* ScheduleDataSource.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DAFBCC702384813D00B00319 = {
+			isa = PBXGroup;
+			children = (
+				DAFBCC7B2384813E00B00319 /* PouleSimulator */,
+				DAFBCC922384813F00B00319 /* PouleSimulatorTests */,
+				DAFBCC9D2384813F00B00319 /* PouleSimulatorUITests */,
+				DAFBCC7A2384813E00B00319 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DAFBCC7A2384813E00B00319 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DAFBCC792384813E00B00319 /* PouleSimulator.app */,
+				DAFBCC8F2384813F00B00319 /* PouleSimulatorTests.xctest */,
+				DAFBCC9A2384813F00B00319 /* PouleSimulatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DAFBCC7B2384813E00B00319 /* PouleSimulator */ = {
+			isa = PBXGroup;
+			children = (
+				DAF69C892386C4DA003C553E /* Utils */,
+				DAF69C862386B81E003C553E /* Constants */,
+				DAFBCCB02384859E00B00319 /* Models */,
+				DAFBCCB12384867700B00319 /* Views */,
+				DAFBCCB22384868400B00319 /* Controllers */,
+				DAFBCCAF2384840400B00319 /* Assets */,
+				DAFBCC7C2384813E00B00319 /* AppDelegate.swift */,
+				DAFBCC7E2384813E00B00319 /* SceneDelegate.swift */,
+				DAFBCC852384813F00B00319 /* Assets.xcassets */,
+				DAFBCC872384813F00B00319 /* LaunchScreen.storyboard */,
+				DAFBCC8A2384813F00B00319 /* Info.plist */,
+			);
+			path = PouleSimulator;
+			sourceTree = "<group>";
+		};
+		DAFBCC922384813F00B00319 /* PouleSimulatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				DAFBCC932384813F00B00319 /* PouleSimulatorTests.swift */,
+				DAFBCC952384813F00B00319 /* Info.plist */,
+			);
+			path = PouleSimulatorTests;
+			sourceTree = "<group>";
+		};
+		DAFBCC9D2384813F00B00319 /* PouleSimulatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DAFBCC9E2384813F00B00319 /* PouleSimulatorUITests.swift */,
+				DAFBCCA02384813F00B00319 /* Info.plist */,
+			);
+			path = PouleSimulatorUITests;
+			sourceTree = "<group>";
+		};
+		DAFBCCAF2384840400B00319 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DA78CF11238824E30047A4DB /* background.png */,
+				DA78CF0A238823630047A4DB /* logo_feyenoord.png */,
+				DA78CF0C238823630047A4DB /* logo_gent.png */,
+				DA78CF09238823630047A4DB /* logo_liverpool.png */,
+				DA78CF0B238823630047A4DB /* logo_valencia.png */,
+				DA4F17CD238B152A00942708 /* stadium_goal_background.jpg */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		DAFBCCB02384859E00B00319 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DAFBCCB32384884B00B00319 /* Team.swift */,
+				DAFBCCB5238489A400B00319 /* Round.swift */,
+				DAFBCCB7238489FF00B00319 /* Match.swift */,
+				DAFBCCB923848B1C00B00319 /* Schedule.swift */,
+				DAFBCCBB23848BEF00B00319 /* Poule.swift */,
+				DAFBCCBD23848D2A00B00319 /* Standing.swift */,
+				DA8E4C0623859A5700157D75 /* TeamResult.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DAFBCCB12384867700B00319 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DAFBCC822384813E00B00319 /* Main.storyboard */,
+				DA3BC02A238945A500796A17 /* StandingsCell.swift */,
+				DA3BC02C238982B300796A17 /* ScheduleCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DAFBCCB22384868400B00319 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DAFBCC802384813E00B00319 /* ViewController.swift */,
+				DA3BC02E238995A300796A17 /* SimulatorViewController.swift */,
+				DA3BC03023899BEA00796A17 /* MainNavigationController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DAFBCC782384813E00B00319 /* PouleSimulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAFBCCA32384813F00B00319 /* Build configuration list for PBXNativeTarget "PouleSimulator" */;
+			buildPhases = (
+				DAFBCC752384813E00B00319 /* Sources */,
+				DAFBCC762384813E00B00319 /* Frameworks */,
+				DAFBCC772384813E00B00319 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PouleSimulator;
+			productName = PouleSimulator;
+			productReference = DAFBCC792384813E00B00319 /* PouleSimulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DAFBCC8E2384813F00B00319 /* PouleSimulatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAFBCCA62384813F00B00319 /* Build configuration list for PBXNativeTarget "PouleSimulatorTests" */;
+			buildPhases = (
+				DAFBCC8B2384813F00B00319 /* Sources */,
+				DAFBCC8C2384813F00B00319 /* Frameworks */,
+				DAFBCC8D2384813F00B00319 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAFBCC912384813F00B00319 /* PBXTargetDependency */,
+			);
+			name = PouleSimulatorTests;
+			productName = PouleSimulatorTests;
+			productReference = DAFBCC8F2384813F00B00319 /* PouleSimulatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DAFBCC992384813F00B00319 /* PouleSimulatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DAFBCCA92384813F00B00319 /* Build configuration list for PBXNativeTarget "PouleSimulatorUITests" */;
+			buildPhases = (
+				DAFBCC962384813F00B00319 /* Sources */,
+				DAFBCC972384813F00B00319 /* Frameworks */,
+				DAFBCC982384813F00B00319 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DAFBCC9C2384813F00B00319 /* PBXTargetDependency */,
+			);
+			name = PouleSimulatorUITests;
+			productName = PouleSimulatorUITests;
+			productReference = DAFBCC9A2384813F00B00319 /* PouleSimulatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DAFBCC712384813D00B00319 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Rik Eekhof";
+				TargetAttributes = {
+					DAFBCC782384813E00B00319 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					DAFBCC8E2384813F00B00319 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = DAFBCC782384813E00B00319;
+					};
+					DAFBCC992384813F00B00319 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = DAFBCC782384813E00B00319;
+					};
+				};
+			};
+			buildConfigurationList = DAFBCC742384813D00B00319 /* Build configuration list for PBXProject "PouleSimulator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DAFBCC702384813D00B00319;
+			productRefGroup = DAFBCC7A2384813E00B00319 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DAFBCC782384813E00B00319 /* PouleSimulator */,
+				DAFBCC8E2384813F00B00319 /* PouleSimulatorTests */,
+				DAFBCC992384813F00B00319 /* PouleSimulatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DAFBCC772384813E00B00319 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFBCC892384813F00B00319 /* LaunchScreen.storyboard in Resources */,
+				DA78CF12238824E30047A4DB /* background.png in Resources */,
+				DA78CF0D238823630047A4DB /* logo_liverpool.png in Resources */,
+				DA78CF10238823630047A4DB /* logo_gent.png in Resources */,
+				DAFBCC862384813F00B00319 /* Assets.xcassets in Resources */,
+				DAFBCC842384813E00B00319 /* Main.storyboard in Resources */,
+				DA4F17CE238B152B00942708 /* stadium_goal_background.jpg in Resources */,
+				DA78CF0E238823630047A4DB /* logo_feyenoord.png in Resources */,
+				DA78CF0F238823630047A4DB /* logo_valencia.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFBCC8D2384813F00B00319 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFBCC982384813F00B00319 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DAFBCC752384813E00B00319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA3BC03123899BEA00796A17 /* MainNavigationController.swift in Sources */,
+				DAFBCCB42384884B00B00319 /* Team.swift in Sources */,
+				DAFBCC812384813E00B00319 /* ViewController.swift in Sources */,
+				DAFBCC7D2384813E00B00319 /* AppDelegate.swift in Sources */,
+				DA3BC02F238995A300796A17 /* SimulatorViewController.swift in Sources */,
+				DAFBCCBC23848BEF00B00319 /* Poule.swift in Sources */,
+				DAFBCCB6238489A400B00319 /* Round.swift in Sources */,
+				DA8E4C0723859A5700157D75 /* TeamResult.swift in Sources */,
+				DAF69C8F2386CC07003C553E /* PouleHelper.swift in Sources */,
+				DA3BC02B238945A500796A17 /* StandingsCell.swift in Sources */,
+				DAFBCC7F2384813E00B00319 /* SceneDelegate.swift in Sources */,
+				DA3BC02D238982B300796A17 /* ScheduleCell.swift in Sources */,
+				DAF69C8D2386C6F4003C553E /* MatchSimulator.swift in Sources */,
+				DAFBCCBE23848D2A00B00319 /* Standing.swift in Sources */,
+				DA59A07C238C671E00124FD9 /* StandingsDataSource.swift in Sources */,
+				DAFBCCBA23848B1C00B00319 /* Schedule.swift in Sources */,
+				DAFBCCB8238489FF00B00319 /* Match.swift in Sources */,
+				DA59A07E238C673900124FD9 /* ScheduleDataSource.swift in Sources */,
+				DAF69C882386B82B003C553E /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFBCC8B2384813F00B00319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFBCC942384813F00B00319 /* PouleSimulatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAFBCC962384813F00B00319 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAFBCC9F2384813F00B00319 /* PouleSimulatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DAFBCC912384813F00B00319 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAFBCC782384813E00B00319 /* PouleSimulator */;
+			targetProxy = DAFBCC902384813F00B00319 /* PBXContainerItemProxy */;
+		};
+		DAFBCC9C2384813F00B00319 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DAFBCC782384813E00B00319 /* PouleSimulator */;
+			targetProxy = DAFBCC9B2384813F00B00319 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DAFBCC822384813E00B00319 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAFBCC832384813E00B00319 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DAFBCC872384813F00B00319 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DAFBCC882384813F00B00319 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DAFBCCA12384813F00B00319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DAFBCCA22384813F00B00319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DAFBCCA42384813F00B00319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4TY37CG8A;
+				INFOPLIST_FILE = PouleSimulator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eekhof.PouleSimulator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DAFBCCA52384813F00B00319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4TY37CG8A;
+				INFOPLIST_FILE = PouleSimulator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eekhof.PouleSimulator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DAFBCCA72384813F00B00319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4TY37CG8A;
+				INFOPLIST_FILE = PouleSimulatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eekhof.PouleSimulatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PouleSimulator.app/PouleSimulator";
+			};
+			name = Debug;
+		};
+		DAFBCCA82384813F00B00319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4TY37CG8A;
+				INFOPLIST_FILE = PouleSimulatorTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eekhof.PouleSimulatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PouleSimulator.app/PouleSimulator";
+			};
+			name = Release;
+		};
+		DAFBCCAA2384813F00B00319 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4TY37CG8A;
+				INFOPLIST_FILE = PouleSimulatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eekhof.PouleSimulatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PouleSimulator;
+			};
+			name = Debug;
+		};
+		DAFBCCAB2384813F00B00319 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U4TY37CG8A;
+				INFOPLIST_FILE = PouleSimulatorUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eekhof.PouleSimulatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PouleSimulator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DAFBCC742384813D00B00319 /* Build configuration list for PBXProject "PouleSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFBCCA12384813F00B00319 /* Debug */,
+				DAFBCCA22384813F00B00319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAFBCCA32384813F00B00319 /* Build configuration list for PBXNativeTarget "PouleSimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFBCCA42384813F00B00319 /* Debug */,
+				DAFBCCA52384813F00B00319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAFBCCA62384813F00B00319 /* Build configuration list for PBXNativeTarget "PouleSimulatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFBCCA72384813F00B00319 /* Debug */,
+				DAFBCCA82384813F00B00319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAFBCCA92384813F00B00319 /* Build configuration list for PBXNativeTarget "PouleSimulatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DAFBCCAA2384813F00B00319 /* Debug */,
+				DAFBCCAB2384813F00B00319 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DAFBCC712384813D00B00319 /* Project object */;
+}
